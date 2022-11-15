@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e8f2759331f94f8d8f49363dd54b85cb" Name="Diagram1">
+        <EntityTypeShape EntityType="ip121Model.Вид_товара" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ip121Model.Доставка" Width="1.5" PointX="9.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ip121Model.Заказ" Width="1.5" PointX="6.375" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ip121Model.Заказчик" Width="1.5" PointX="3.375" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ip121Model.Оплата" Width="1.5" PointX="10.125" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ip121Model.Партии" Width="1.5" PointX="6.5" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ip121Model.Состав_Накладной" Width="1.5" PointX="8.125" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ip121Model.Товар" Width="1.5" PointX="1.375" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ip121Model.Товарная_накладная" Width="1.5" PointX="11.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ip121Model.Товары_на_заказ" Width="1.5" PointX="4.375" PointY="4.5" IsExpanded="true" />
+        <AssociationConnector Association="ip121Model.FK_Товар_Вид_товара" ManuallyRouted="false" />
+        <AssociationConnector Association="ip121Model.FK_Доставка_Заказ" ManuallyRouted="false" />
+        <AssociationConnector Association="ip121Model.FK_Товарная_накладная_Доставка" ManuallyRouted="false" />
+        <AssociationConnector Association="ip121Model.FK_Заказ_Заказчик" ManuallyRouted="false" />
+        <AssociationConnector Association="ip121Model.FK_Заказ_Оплата" ManuallyRouted="false" />
+        <AssociationConnector Association="ip121Model.FK_Товары_на_заказ_Заказ" ManuallyRouted="false" />
+        <AssociationConnector Association="ip121Model.FK_Партии_Товары_на_заказ" ManuallyRouted="false" />
+        <AssociationConnector Association="ip121Model.FK_Состав_Накладной_Товар" ManuallyRouted="false" />
+        <AssociationConnector Association="ip121Model.FK_Состав_Накладной_Товарная_накладная" ManuallyRouted="false" />
+        <AssociationConnector Association="ip121Model.FK_Товары_на_заказ_Товар" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
