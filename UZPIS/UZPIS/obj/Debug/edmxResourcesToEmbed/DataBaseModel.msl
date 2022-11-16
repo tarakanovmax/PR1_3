@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ip121ModelContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Вид_товара">
+      <EntityTypeMapping TypeName="ip121Model.Вид_товара">
+        <MappingFragment StoreEntitySet="Вид_товара">
+          <ScalarProperty Name="Код_вид_товара" ColumnName="Код_вид_товара" />
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Доставка">
+      <EntityTypeMapping TypeName="ip121Model.Доставка">
+        <MappingFragment StoreEntitySet="Доставка">
+          <ScalarProperty Name="Код_доставки" ColumnName="Код_доставки" />
+          <ScalarProperty Name="Код_заказа" ColumnName="Код_заказа" />
+          <ScalarProperty Name="Дата" ColumnName="Дата" />
+          <ScalarProperty Name="Адрес" ColumnName="Адрес" />
+          <ScalarProperty Name="Стоимость" ColumnName="Стоимость" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Заказ">
+      <EntityTypeMapping TypeName="ip121Model.Заказ">
+        <MappingFragment StoreEntitySet="Заказ">
+          <ScalarProperty Name="Код_заказа" ColumnName="Код_заказа" />
+          <ScalarProperty Name="Код_заказчик" ColumnName="Код_заказчик" />
+          <ScalarProperty Name="Код_оплаты" ColumnName="Код_оплаты" />
+          <ScalarProperty Name="Дата_начала" ColumnName="Дата_начала" />
+          <ScalarProperty Name="Дата_окончания" ColumnName="Дата_окончания" />
+          <ScalarProperty Name="Дата_исполнения" ColumnName="Дата_исполнения" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Заказчик">
+      <EntityTypeMapping TypeName="ip121Model.Заказчик">
+        <MappingFragment StoreEntitySet="Заказчик">
+          <ScalarProperty Name="Код_заказчика" ColumnName="Код_заказчика" />
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+          <ScalarProperty Name="Адрес" ColumnName="Адрес" />
+          <ScalarProperty Name="Телефон" ColumnName="Телефон" />
+          <ScalarProperty Name="Контакное_лицо" ColumnName="Контакное_лицо" />
+          <ScalarProperty Name="Реквизиты" ColumnName="Реквизиты" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Оплата">
+      <EntityTypeMapping TypeName="ip121Model.Оплата">
+        <MappingFragment StoreEntitySet="Оплата">
+          <ScalarProperty Name="Код_оплаты" ColumnName="Код_оплаты" />
+          <ScalarProperty Name="Вид_оплаты" ColumnName="Вид_оплаты" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Партии">
+      <EntityTypeMapping TypeName="ip121Model.Партии">
+        <MappingFragment StoreEntitySet="Партии">
+          <ScalarProperty Name="Код_партии" ColumnName="Код_партии" />
+          <ScalarProperty Name="Код_ТНЗ" ColumnName="Код_ТНЗ" />
+          <ScalarProperty Name="Количество" ColumnName="Количество" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Состав_Накладной">
+      <EntityTypeMapping TypeName="ip121Model.Состав_Накладной">
+        <MappingFragment StoreEntitySet="Состав_Накладной">
+          <ScalarProperty Name="Код_товара" ColumnName="Код товара" />
+          <ScalarProperty Name="Код_ТН" ColumnName="Код ТН" />
+          <ScalarProperty Name="Количество" ColumnName="Количество" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Товар">
+      <EntityTypeMapping TypeName="ip121Model.Товар">
+        <MappingFragment StoreEntitySet="Товар">
+          <ScalarProperty Name="Код_товара" ColumnName="Код_товара" />
+          <ScalarProperty Name="Код_вида_товара" ColumnName="Код_вида_товара" />
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+          <ScalarProperty Name="Описание" ColumnName="Описание" />
+          <ScalarProperty Name="Срок_годности" ColumnName="Срок_годности" />
+          <ScalarProperty Name="Цена" ColumnName="Цена" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Товарная_накладная">
+      <EntityTypeMapping TypeName="ip121Model.Товарная_накладная">
+        <MappingFragment StoreEntitySet="Товарная накладная">
+          <ScalarProperty Name="Код_ТН" ColumnName="Код_ТН" />
+          <ScalarProperty Name="Код_доставки" ColumnName="Код_доставки" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Товары_на_заказ">
+      <EntityTypeMapping TypeName="ip121Model.Товары_на_заказ">
+        <MappingFragment StoreEntitySet="Товары на заказ">
+          <ScalarProperty Name="Код_ТНЗ" ColumnName="Код_ТНЗ" />
+          <ScalarProperty Name="Код_товара" ColumnName="Код_товара" />
+          <ScalarProperty Name="Код_заказа" ColumnName="Код_заказа" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
